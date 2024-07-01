@@ -1,0 +1,45 @@
+//? ++++++++++++=++ Змінні в CSS ++=++++++++++++
+:root {
+    --color-main: #626262;
+    --color-second:  #7d7d7d;
+    --color-third:   #b4ad9e;
+    --color-hover: #03a9f4;
+    
+    --font-family: "Playfair Display", sans-serif;
+    --second-family: "Ubuntu", sans-serif;
+}
+
+
+//! ++++++++++++++ Змінні в SCSS ++++++++++++++
+    $color-main: #626262;
+    $color-second:#7d7d7d;
+    $color-third: #b4ad9e;
+    $color-hover:#03a9f4;
+
+    $font-family: "Playfair Display", sans-serif;
+    $second-family: "Ubuntu", sans-serif;
+
+
+
+//! +++++++++ Змінні в SCSS з map-get +++++++++
+//* ================= colors ==================
+$colors: (
+    main:#626262,
+    second:#7d7d7d,
+    third:#b4ad9e,
+    hover:#03a9f4,
+);
+
+@function getColor($key) {
+    @return map-get($colors, $key);
+}
+
+//* ================= fonts ===================
+$fonts: (
+    font-family: "Playfair Display",
+    second-family: "Ubuntu",
+);
+
+@function getFonts($key) {
+    @return map-get($fonts, $key);
+}
