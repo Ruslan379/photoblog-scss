@@ -21,8 +21,14 @@
             // color: map-get($colors, 'second');
             color: getColor('second');
             // color: red;
+
+            //! так НЕ ПРАЦЮЄ!
+            // .nav-list__item:hover  & {
+            //     color: getColor('hover');
+            // }
         }
-        &__item:hover  .nav-list__link{
+        
+        &__item:hover  .nav-list__link {
             //? Змінні в CSS:
             // color: var(--color-hover);
             //! Змінні в SCSS:
