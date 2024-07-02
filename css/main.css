@@ -37,18 +37,18 @@ button:hover {
 }
 
 :root {
+  --font-family: "Playfair Display", sans-serif;
+  --second-family: "Ubuntu", sans-serif;
   --color-main: #626262;
   --color-second: #7d7d7d;
   --color-third: #b4ad9e;
   --color-hover: #03a9f4;
-  --font-family: "Playfair Display", sans-serif;
-  --second-family: "Ubuntu", sans-serif;
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: "Playfair Display";
   font-size: 14px;
-  color: var(--color-main);
+  color: #626262;
   background-color: wheat;
 }
 
@@ -61,19 +61,19 @@ body {
   padding-top: 71px;
   padding-bottom: 92px;
 }
-.header .header-nav-list {
+.header .nav-list {
   width: 555px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
-.header .header-nav-list__link {
+.header .nav-list__link {
   text-transform: lowercase;
   text-transform: uppercase;
   color: #7d7d7d;
 }
-.header .header-nav-list__item:hover .header-nav-list__link {
-  color: var(--color-hover);
+.header .nav-list__item:hover .nav-list__link {
+  color: #03a9f4;
 }
 
 .gallery {
