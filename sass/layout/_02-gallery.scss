@@ -4,16 +4,26 @@
     // background-color: rgb(218, 255, 218); 
 
     .container {
-        display: flex;
-        flex-direction: column;
+        //? CSS flex
+        // display: flex;
+        // flex-direction: column;
+        //!  SASS-flex - Використання плейсхолдера:
+        // @extend %flex_FDcol;
+        //!  SASS-flex - Використання міксіна:
+        @include flex_FDcol;
 
         .gallery-title {
             display: none;
         }
 
         .gallery-list {
-            display: flex;
-            flex-wrap: wrap;
+            //? CSS-flex
+            // display: flex;
+            // flex-wrap: wrap;
+            //!  SASS-flex - Використання плейсхолдера:
+            // @extend %flex-FWw;
+            //!  SASS-flex- Використання міксіна:
+            @include flex-FWw;
             column-gap: 65px;
             row-gap: 130px;
             
@@ -76,27 +86,27 @@
         //* +++++ СТИЛІЗАЦІЯ КНОПОК - 2-й варіант +++++
         //* Використання Директиви @extend
         //! Загальні стилі кнопки
-        //? Додатковий клас:
-        .button {
-            align-self: center;
-            padding: 20px 48px 21px 48px;
-            font-size: 1.5rem;
-            background-color: inherit;
-        }
-        //? Шаблон (плейсхолдер):
-        %button {
-            align-self: center;
-            padding: 20px 48px 21px 48px;
-            font-size: 1.5rem;
-            background-color: inherit;
-        }
+        //? Додатковий клас, також є в components/_buttons.scss:
+        // .buttons {
+        //     align-self: center;
+        //     padding: 20px 48px 21px 48px;
+        //     font-size: 1.5rem;
+        //     background-color: inherit;
+        // }
+        //? Шаблон (плейсхолдер), також є в utils/_plaseholders.scss:
+        // %buttons {
+        //     align-self: center;
+        //     padding: 20px 48px 21px 48px;
+        //     font-size: 1.5rem;
+        //     background-color: inherit;
+        // }
         
         //! Стилі кнопки firts
         .gallery__button-firts {
             //? Використання додаткового класу:
-            @extend .button;
+            @extend .buttons;
             //? Використання плейсхолдера:
-            // @extend %button;
+            // @extend %buttons;
             margin-top: 90px;
             color: red;
             background-color: aqua;
@@ -105,9 +115,9 @@
         //! Стилі кнопки second
         .gallery__button-second {
             //? Використання додаткового класу:
-            // @extend .button;
+            // @extend .buttons;
             //? Використання плейсхолдера:
-            @extend %button;
+            @extend %buttons;
             margin-top: 10px;
             color: aqua;
             background-color: red;

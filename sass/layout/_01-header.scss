@@ -7,19 +7,22 @@
     .nav-list {
         width: 555px;
         margin: 0 auto;
-        //? CSS
+         // -----------------------------------------
+        //? CSS flex
         // display: flex;
         // justify-content: space-between;
-        //!  SASS - Використання плейсхолдера:
+        //!  SASS-flex - Використання плейсхолдера:
         // @extend %flex-JCsb;
-        //!  SASS- Використання міксіна:
+        //!  SASS-flex - Використання міксіна:
         @include flex-JCsb;
-        //? CSS outline
-        outline: 1px dashed #2a2a2a;
-        //! SASS міксін outline var.1 
-        @include outline(1px, dashed, #2a2a2a);
-        //! SASS міксін outline var.2 
+        // -----------------------------------------
+        //? CSS-outline
+        // outline: 1px dashed #2a2a2a;
+        //! SASS-outline - міксін var.1 
+        // @include outline(1px, dashed, #2a2a2a);
+        //! SASS-outline міксін var.2 
         // @include outline;
+         // -----------------------------------------
 
         &__link {
             text-transform: lowercase;

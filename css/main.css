@@ -45,6 +45,13 @@ button:hover {
   --color-hover: #03a9f4;
 }
 
+.gallery .container .gallery__button-second {
+  align-self: center;
+  padding: 20px 48px 21px 48px;
+  font-size: 1.5rem;
+  background-color: inherit;
+}
+
 body {
   font-family: "Playfair Display";
   font-size: 14px;
@@ -57,6 +64,13 @@ body {
   margin: 0 auto;
 }
 
+.buttons, .gallery .container .gallery__button-firts {
+  align-self: center;
+  padding: 20px 48px 21px 48px;
+  font-size: 1.5rem;
+  background-color: inherit;
+}
+
 .header {
   padding-top: 71px;
   padding-bottom: 92px;
@@ -67,8 +81,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  outline: 1px dashed #2a2a2a;
-  outline: 1px dashed #2a2a2a;
 }
 .header .nav-list__link {
   text-transform: lowercase;
@@ -113,18 +125,6 @@ body {
   font-weight: 400;
   font-size: 30px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-.gallery .container .button, .gallery .container .gallery__button-firts {
-  align-self: center;
-  padding: 20px 48px 21px 48px;
-  font-size: 1.5rem;
-  background-color: inherit;
-}
-.gallery .container .gallery__button-second {
-  align-self: center;
-  padding: 20px 48px 21px 48px;
-  font-size: 1.5rem;
-  background-color: inherit;
 }
 .gallery .container .gallery__button-firts {
   margin-top: 90px;
