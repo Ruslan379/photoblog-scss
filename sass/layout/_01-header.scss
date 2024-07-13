@@ -7,11 +7,11 @@
     .nav-list {
         width: 555px;
         margin: 0 auto;
-         // -----------------------------------------
+        // -----------------------------------------
         //? CSS flex
         // display: flex;
         // justify-content: space-between;
-        //!  SASS-flex - Використання плейсхолдера:
+        //*  SASS-flex - Використання плейсхолдера:
         // @extend %flex-JCsb;
         //!  SASS-flex - Використання міксіна:
         @include flex-JCsb;

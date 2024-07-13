@@ -7,7 +7,7 @@
         //? CSS flex
         // display: flex;
         // flex-direction: column;
-        //!  SASS-flex - Використання плейсхолдера:
+        //*  SASS-flex - Використання плейсхолдера:
         // @extend %flex_FDcol;
         //!  SASS-flex - Використання міксіна:
         @include flex_FDcol;
@@ -20,7 +20,7 @@
             //? CSS-flex
             // display: flex;
             // flex-wrap: wrap;
-            //!  SASS-flex - Використання плейсхолдера:
+            //*  SASS-flex - Використання плейсхолдера:
             // @extend %flex-FWw;
             //!  SASS-flex- Використання міксіна:
             @include flex-FWw;
@@ -93,8 +93,15 @@
         //     font-size: 1.5rem;
         //     background-color: inherit;
         // }
-        //? Шаблон (плейсхолдер), також є в utils/_plaseholders.scss:
+        //* Шаблон (плейсхолдер), також є в utils/_plaseholders.scss:
         // %buttons {
+        //     align-self: center;
+        //     padding: 20px 48px 21px 48px;
+        //     font-size: 1.5rem;
+        //     background-color: inherit;
+        // }
+        //! Міксін, також є в utils/_mixins.scss:
+        // @mixin buttons {
         //     align-self: center;
         //     padding: 20px 48px 21px 48px;
         //     font-size: 1.5rem;
@@ -103,10 +110,14 @@
         
         //! Стилі кнопки firts
         .gallery__button-firts {
+            // -----------------------------------------
             //? Використання додаткового класу:
             @extend .buttons;
-            //? Використання плейсхолдера:
+            //* Використання плейсхолдера:
             // @extend %buttons;
+            //! Використання міксіна:
+            // @include buttons;
+            // -----------------------------------------
             margin-top: 90px;
             color: red;
             background-color: aqua;
@@ -114,10 +125,14 @@
         
         //! Стилі кнопки second
         .gallery__button-second {
+            // -----------------------------------------
             //? Використання додаткового класу:
             // @extend .buttons;
-            //? Використання плейсхолдера:
-            @extend %buttons;
+            //* Використання плейсхолдера:
+            // @extend %buttons;
+            //! Використання міксіна:
+            @include buttons;
+            // -----------------------------------------
             margin-top: 10px;
             color: aqua;
             background-color: red;
