@@ -41,11 +41,34 @@
             }
         }
 
+        //* СТИЛІЗАЦІЯ КНОПОК
+        //! Загальні стилі кнопки
         .gallery-button {
             align-self: center;
-            margin-top: 90px;
+            // margin-top: 90px;
             padding: 20px 48px 21px 48px;
             background-color: inherit;
+        }
+
+        //! Мікси (міксування, суміш).
+        //!  Зовнішня геометрія або позиціонування, необхідні тільки у певному місці
+        .gallery__button-firts {
+            margin-top: 90px;
+        }
+
+        .gallery__button-second {
+            margin-top: 10px;
+        }
+
+        //! Модифікатор - визначає зміну зовнішнього вигляду
+        .gallery-button--style-firts {
+            color: red;
+            background-color: aqua;
+        }
+
+        .gallery-button--style-second {
+            color: aqua;
+            background-color: red;
         }
     }
 }

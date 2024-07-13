@@ -113,7 +113,20 @@ body {
 }
 .gallery .container .gallery-button {
   align-self: center;
-  margin-top: 90px;
   padding: 20px 48px 21px 48px;
   background-color: inherit;
+}
+.gallery .container .gallery__button-firts {
+  margin-top: 90px;
+}
+.gallery .container .gallery__button-second {
+  margin-top: 10px;
+}
+.gallery .container .gallery-button--style-firts {
+  color: red;
+  background-color: aqua;
+}
+.gallery .container .gallery-button--style-second {
+  color: aqua;
+  background-color: red;
 }/*# sourceMappingURL=main.css.map */
