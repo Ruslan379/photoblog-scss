@@ -41,32 +41,74 @@
             }
         }
 
-        //* СТИЛІЗАЦІЯ КНОПОК
+        //* +++++ СТИЛІЗАЦІЯ КНОПОК - 1-й варіант +++++
+        //* Використання Міксів та Модифікаторів
+        // //! Загальні стилі кнопки
+        // .gallery-button {
+        //     align-self: center;
+        //     // margin-top: 90px;
+        //     padding: 20px 48px 21px 48px;
+        //     font-size: 1.5rem;
+        //     background-color: inherit;
+        // }
+        
+        // //! Мікси (міксування, суміш).
+        // //!  Зовнішня геометрія або позиціонування, необхідні тільки у певному місці
+        // .gallery__button-firts {
+        //     margin-top: 90px;
+        // }
+        
+        // .gallery__button-second {
+        //     margin-top: 10px;
+        // }
+        
+        // //! Модифікатор - визначає зміну зовнішнього вигляду
+        // .gallery-button--style-firts {
+        //     color: red;
+        //     background-color: aqua;
+        // }
+        
+        // .gallery-button--style-second {
+        //     color: aqua;
+        //     background-color: red;
+        // }
+
+        //* +++++ СТИЛІЗАЦІЯ КНОПОК - 2-й варіант +++++
+        //* Використання Директиви @extend
         //! Загальні стилі кнопки
-        .gallery-button {
+        //? Додатковий клас:
+        .button {
             align-self: center;
-            // margin-top: 90px;
             padding: 20px 48px 21px 48px;
+            font-size: 1.5rem;
             background-color: inherit;
         }
-
-        //! Мікси (міксування, суміш).
-        //!  Зовнішня геометрія або позиціонування, необхідні тільки у певному місці
+        //? Шаблон (плейсхолдер):
+        %button {
+            align-self: center;
+            padding: 20px 48px 21px 48px;
+            font-size: 1.5rem;
+            background-color: inherit;
+        }
+        
+        //! Стилі кнопки firts
         .gallery__button-firts {
+            //? Використання додаткового класу:
+            @extend .button;
+            //? Використання плейсхолдерв:
+            // @extend %button;
             margin-top: 90px;
-        }
-
-        .gallery__button-second {
-            margin-top: 10px;
-        }
-
-        //! Модифікатор - визначає зміну зовнішнього вигляду
-        .gallery-button--style-firts {
             color: red;
             background-color: aqua;
         }
-
-        .gallery-button--style-second {
+        
+        //! Стилі кнопки second
+        .gallery__button-second {
+            //? Використання додаткового класу:
+            // @extend .button;
+            //? Використання плейсхолдерв:
+            @extend %button;
+            margin-top: 10px;
             color: aqua;
             background-color: red;
         }

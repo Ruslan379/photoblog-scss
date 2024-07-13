@@ -111,22 +111,25 @@ body {
   font-size: 30px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.gallery .container .gallery-button {
+.gallery .container .button, .gallery .container .gallery__button-firts {
   align-self: center;
   padding: 20px 48px 21px 48px;
+  font-size: 1.5rem;
+  background-color: inherit;
+}
+.gallery .container .gallery__button-second {
+  align-self: center;
+  padding: 20px 48px 21px 48px;
+  font-size: 1.5rem;
   background-color: inherit;
 }
 .gallery .container .gallery__button-firts {
   margin-top: 90px;
-}
-.gallery .container .gallery__button-second {
-  margin-top: 10px;
-}
-.gallery .container .gallery-button--style-firts {
   color: red;
   background-color: aqua;
 }
-.gallery .container .gallery-button--style-second {
+.gallery .container .gallery__button-second {
+  margin-top: 10px;
   color: aqua;
   background-color: red;
 }/*# sourceMappingURL=main.css.map */
