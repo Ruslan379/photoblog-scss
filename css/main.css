@@ -102,6 +102,26 @@ body {
 }
 .gallery .container .gallery-list__item {
   flex-basis: calc((100% - 65px) / 2);
+  background-repeat: no-repeat;
+  background-position: right calc(50% + 40px);
+}
+.gallery .container .gallery-list__item--1 {
+  background-image: url(https://img.icons8.com/ios/50/1.png);
+}
+.gallery .container .gallery-list__item--2 {
+  background-image: url(https://img.icons8.com/ios/50/2.png);
+}
+.gallery .container .gallery-list__item--3 {
+  background-image: url(https://img.icons8.com/ios/50/3.png);
+}
+.gallery .container .gallery-list__item--4 {
+  background-image: url(https://img.icons8.com/ios/50/4.png);
+}
+.gallery .container .gallery-list__item--5 {
+  background-image: url(https://img.icons8.com/ios/50/5.png);
+}
+.gallery .container .gallery-list__item--6 {
+  background-image: url(https://img.icons8.com/ios/50/6.png);
 }
 .gallery .container .gallery-list__img {
   margin-bottom: 62px;
