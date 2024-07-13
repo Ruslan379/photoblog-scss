@@ -95,7 +95,7 @@
         .gallery__button-firts {
             //? Використання додаткового класу:
             @extend .button;
-            //? Використання плейсхолдерв:
+            //? Використання плейсхолдера:
             // @extend %button;
             margin-top: 90px;
             color: red;
@@ -106,7 +106,7 @@
         .gallery__button-second {
             //? Використання додаткового класу:
             // @extend .button;
-            //? Використання плейсхолдерв:
+            //? Використання плейсхолдера:
             @extend %button;
             margin-top: 10px;
             color: aqua;
