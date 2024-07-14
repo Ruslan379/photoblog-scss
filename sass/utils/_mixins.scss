@@ -49,3 +49,13 @@
         }
     }
 }
+
+//todo var.3
+@mixin galleryItemNumberList($numbers) {
+    @each $number in $numbers {
+        &__item--#{$number} {
+            background-image: 
+                url(https://img.icons8.com/ios/50/#{$number}.png);
+        }
+    }
+}

@@ -29,6 +29,7 @@
             
             &__item {
                 flex-basis: calc((100% - 65px) / 2);
+                //! ДОДАВАННЯ ФОНОВИХ ЗОБРАЖЕНЬ
                 // background-image: url(https://img.icons8.com/ios/50/1.png);
                 background-repeat: no-repeat;
                 // -----------------------------------------
@@ -50,6 +51,9 @@
                 //todo var.2 - Використання Міксін + @each - цикл для додавання фонових зображень
                 @include galleryItemNumber($numbers);
             }
+            
+            //todo var.3 - Використання Міксін + @each - цикл для додавання фонових зображень
+            // @include galleryItemNumberList($numbers);
             
             &__img {
                 margin-bottom: 62px;
