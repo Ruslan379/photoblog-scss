@@ -13,7 +13,7 @@
 
 
 //! ----------- SASS-flex-властивості (flex-контейнери) -----------
-@mixin flex-JCsb {
+@mixin flex_JCsb {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -24,7 +24,7 @@
     flex-direction: column;
 }
 
-@mixin flex-FWw {
+@mixin flex_FWw {
     display: flex;
     flex-wrap: wrap;
 }

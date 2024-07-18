@@ -21,9 +21,9 @@
             // display: flex;
             // flex-wrap: wrap;
             //*  SASS-flex - Використання плейсхолдера:
-            // @extend %flex-FWw;
+            // @extend %flex_FWw;
             //!  SASS-flex- Використання міксіна:
-            @include flex-FWw;
+            @include flex_FWw;
             column-gap: 65px;
             row-gap: 130px;
             

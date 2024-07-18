@@ -12,9 +12,9 @@
         // display: flex;
         // justify-content: space-between;
         //*  SASS-flex - Використання плейсхолдера:
-        // @extend %flex-JCsb;
+        // @extend %flex_JCsb;
         //!  SASS-flex - Використання міксіна:
-        @include flex-JCsb;
+        @include flex_JCsb;
         // -----------------------------------------
         //? CSS-outline
         // outline: 1px dashed #2a2a2a;
