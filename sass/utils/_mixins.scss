@@ -7,7 +7,7 @@
 // }
 
 //todo міксін var.2  
-@mixin outline($size: 1px, $type: solid, $color: tomato) {
+@mixin outline($size: 1px, $type: solid, $color: red) {
     outline: $size $type $color;
 }
 

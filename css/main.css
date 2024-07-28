@@ -62,6 +62,7 @@ body {
 .container {
   width: 905px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 .buttons {
