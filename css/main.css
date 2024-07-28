@@ -103,6 +103,7 @@ body {
 }
 .gallery .container .gallery-list {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   column-gap: 65px;
   row-gap: 130px;
