@@ -7,8 +7,16 @@
 // }
 
 
+//* СТАЛО:
+body {
+    font-family: getFont('font-family');
+    font-size: 14px;
+    color: getColor('main');
+    background-color: wheat;
+}
 
-//? Покрокові варіанти використання змінних:
+
+//? Приклади: покрокові варіанти використання змінних:
 // body {
 //     //* ================= fonts ===================
 //     //? var-00.CSS-змінні
@@ -39,10 +47,3 @@
 
 
 
-//* СТАЛО:
-body {
-    font-family: getFont('font-family');
-    font-size: 14px;
-    color: getColor('main');
-    background-color: wheat;
-}

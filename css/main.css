@@ -45,6 +45,13 @@ button:hover {
   --color-hover: #03a9f4;
 }
 
+.gallery .container .gallery__button-firts {
+  align-self: center;
+  padding: 20px 48px 21px 48px;
+  font-size: 1.5rem;
+  background-color: inherit;
+}
+
 body {
   font-family: "Playfair Display";
   font-size: 14px;
@@ -57,7 +64,7 @@ body {
   margin: 0 auto;
 }
 
-.buttons, .gallery .container .gallery__button-firts {
+.buttons {
   align-self: center;
   padding: 20px 48px 21px 48px;
   font-size: 1.5rem;
