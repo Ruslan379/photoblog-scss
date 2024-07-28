@@ -26,6 +26,8 @@
             @include flex_FWw;
             column-gap: 65px;
             row-gap: 130px;
+            //! SASS-outline - міксін var.1 
+            // @include outline(2px, dotted, tomato);
             
             &__item {
                 flex-basis: calc((100% - 65px) / 2);
