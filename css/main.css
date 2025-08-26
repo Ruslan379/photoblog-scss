@@ -112,6 +112,7 @@ body {
   flex-basis: calc((100% - 65px) / 2);
   background-repeat: no-repeat;
   background-position: right calc(50% + 40px);
+  background-position: right calc(50% + 40px);
 }
 .gallery .container .gallery-list__item--1 {
   background-image: url(https://img.icons8.com/ios/50/1.png);
@@ -131,6 +132,24 @@ body {
 .gallery .container .gallery-list__item--6 {
   background-image: url(https://img.icons8.com/ios/50/6.png);
 }
+.gallery .container .gallery-list__item--lightcoral {
+  background-color: lightcoral;
+}
+.gallery .container .gallery-list__item--orange {
+  background-color: orange;
+}
+.gallery .container .gallery-list__item--skyblue {
+  background-color: skyblue;
+}
+.gallery .container .gallery-list__item--violet {
+  background-color: violet;
+}
+.gallery .container .gallery-list__item--yellow {
+  background-color: yellow;
+}
+.gallery .container .gallery-list__item--lightgreen {
+  background-color: lightgreen;
+}
 .gallery .container .gallery-list__img {
   margin-bottom: 62px;
 }
@@ -140,6 +159,7 @@ body {
   font-family: var(--second-family);
   font-weight: 300;
   color: var(--color-third);
+  color: blue;
 }
 .gallery .container .gallery-list__title {
   margin-bottom: 40px;

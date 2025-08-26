@@ -37,7 +37,7 @@
                 // -----------------------------------------
                 //! АРИФМЕТИЧНІ ОПЕРАЦІЇ:
                 //todo Без змінних:
-                // background-position: right calc(50% + 40px);
+                background-position: right calc(50% + 40px);
                 //? Так ТЕЖ працює, хоча не повинно працювати:
                 // background-position: right calc(50% + $gallery-item-indentation);
                 //* Інтерполяція значення змінної (правильний синтаксис):
@@ -56,6 +56,13 @@
             
             //todo var.3 - Використання Міксін + @each - цикл для додавання фонових зображень
             // @include galleryItemNumberList($numbers);
+
+            //todo var.@each- Використання Міксін+@each - цикл для зміни фонового кольору 
+            @include galleryItemBackgroundColor($section-colors);
+
+            // &__item--red {
+            //     background-color: lightgrey;
+            // }
             
             &__img {
                 margin-bottom: 62px;
@@ -67,6 +74,7 @@
                 font-family: var(--second-family);
                 font-weight: 300;
                 color: var(--color-third);
+                color: blue;
             }
             
             &__title {

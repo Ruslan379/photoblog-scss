@@ -60,3 +60,12 @@
         }
     }
 }
+
+//todo var.@each
+@mixin galleryItemBackgroundColor($colors) {
+    @each $color in $colors {
+        &__item--#{$color} {
+            background-color: #{$color};
+        }
+    }
+}
